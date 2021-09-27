@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/Toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Toolbar"
+        android:id="@+id/search_layout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_layout"
+        android:layout_marginLeft="20dp"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:hint="Search..."
+            android:background="@android:color/transparent"
+            android:id="@+id/Search"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/search_layout"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:background="#D62A0B"
+            android:layout_below="@id/Toolbar"
+            android:text="search"
+
+            >
+        </Button>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/search_layout"
+       android:layout_marginTop="10dp"
+       >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_marginTop="10dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginLeft="30dp"
+               android:src="@drawable/main"
+               android:id="@+id/mainImg"
+               />
+           <ImageView
+               android:layout_width="fill_parent"
+               android:layout_height="200dp"
+               android:layout_toRightOf="@id/mainImg"
+               android:src="@drawable/main2"
+
+               />
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/mainImg"
+               android:layout_marginTop="20dp"
+               android:id="@+id/Img"
+               >
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/paintlayout"
+                   >
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_marginLeft="30dp"
+                       android:src="@drawable/paint"
+                       android:id="@+id/paintImg"
+                       android:layout_centerHorizontal="true"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/paintImg"
+                       android:layout_marginLeft="20dp"
+                       android:text="Arts and Craft"
+                       android:layout_centerHorizontal="true"
+
+                       />
+               </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/paintlayout"
+                  android:layout_marginLeft="0dp"
+                  android:id="@+id/babylayout"
+                  >
+                  <ImageView
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_marginLeft="40dp"
+                      android:src="@drawable/baby"
+                      android:layout_centerHorizontal="true"
+                      android:id="@+id/babyImg"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50dp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_below="@id/babyImg"
+                      android:text="baby"
+
+                      />
+              </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/babylayout"
+                   android:layout_marginLeft="0dp"
+                   android:id="@+id/autolayout"
+                   >
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_centerHorizontal="true"
+                       android:src="@drawable/automotive"
+                       android:id="@+id/AutoIMG"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/AutoIMG"
+                       android:layout_centerHorizontal="true"
+                       android:text="Automotive"
+                       />
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/autolayout"
+                   android:layout_marginLeft="20dp"
+                   >
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:id="@+id/digitIMG"
+                       android:layout_centerHorizontal="true"
+                       android:src="@drawable/online_music"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/digitIMG"
+                       android:text="Digital Music"
+                       android:layout_centerHorizontal="true"
+                       />
+               </RelativeLayout>
+           </RelativeLayout>
+
+           <HorizontalScrollView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/Img"
+               android:id="@+id/img2"
+               >
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+
+                   <ImageView
+
+                       android:layout_width="150dp"
+                       android:layout_height="100dp"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginTop="10dp"
+                       android:background="@drawable/img1" />
+
+                   <ImageView
+                       android:layout_width="150dp"
+                       android:layout_height="100dp"
+                       android:layout_below="@+id/Img"
+                       android:layout_marginTop="10dp"
+                       android:background="@drawable/img2"
+                       android:layout_toRightOf="@+id/img2"
+                       android:layout_marginLeft="100dp"
+                       />
+               </LinearLayout>
+           </HorizontalScrollView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BEST SELLER"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:layout_marginLeft="20dp"
+               android:layout_below="@+id/img2"
+               android:id="@+id/text"
+               android:layout_marginTop="10dp"
+               />
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgcard3"
+                    android:layout_below="@+id/text"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/imgcard"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/img3"
+                                    android:id="@+id/img3"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img3"
+                                    android:text="Upto 20% off"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/imgcard2"
+                            android:layout_toRightOf="@id/imgcard"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/img4"
+                                    android:id="@+id/img4"
+                                    />
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/img5"
+                                    android:id="@+id/img5"
+                                    android:layout_toRightOf="@id/img4"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img4"
+                                    android:text="Upto 50% off"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/imgcard2"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/img6"
+                                    android:id="@+id/img6"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/img6"
+                                    android:text="Upto 30% off"
+                                    android:layout_centerHorizontal="true"
+                                    />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="BACK TO THE CITY"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_below="@id/imgcard3"
+               android:layout_marginTop="10dp"
+               android:id="@+id/text3"
+               />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card5"
+                android:layout_below="@id/text3"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       app:cardCornerRadius="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/card3"
+                        >
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/img7"
+                            android:src="@drawable/img7"
+
+                            />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text3"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/card4"
+                        android:layout_toRightOf="@id/card3"
+                        >
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/img8"
+                            android:src="@drawable/img8"
+
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="50dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_toRightOf="@id/card4"
+                        >
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/img9"
+                            android:src="@drawable/img9"
+
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CLOTHING AND SHOES"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:layout_below="@id/card5"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/text4"
+               />
+
+           <HorizontalScrollView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/card8"
+               android:layout_below="@id/text4"
+               >
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:cardCornerRadius="2dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="50dp"
+                       android:id="@+id/card6"
+                       >
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:id="@+id/img10"
+                           android:src="@drawable/img12"
+
+                           />
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/text4"
+                       app:cardCornerRadius="20dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="50dp"
+                       android:id="@+id/card7"
+                       android:layout_toRightOf="@+id/card6"
+                       >
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:id="@+id/img11"
+                           android:src="@drawable/img9"
+
+                           />
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/text4"
+                       android:layout_marginTop="10dp"
+                       app:cardCornerRadius="20dp"
+                       android:layout_marginLeft="50dp"
+
+                       android:layout_toRightOf="@+id/card7"
+                       >
+                       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:id="@+id/img12"
+                           android:src="@drawable/img18"
+
+                           />
+
+                   </androidx.cardview.widget.CardView>
+
+
+               </LinearLayout>
+           </HorizontalScrollView>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_below="@id/card8"
+               android:layout_marginTop="20dp"
+               android:id="@+id/layout1"
+               android:background="#D62A0B"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FLASH DEALS"
+                   android:textColor="#ffffff"
+                   android:textSize="20dp"
+                   android:layout_marginTop="20dp"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="20dp"
+                   android:id="@+id/text5"
+                   />
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/text5"
+                   android:layout_marginLeft="20dp"
+                   android:id="@+id/card9"
+                   >
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:id="@+id/img13"
+                       android:src="@drawable/img9"
+
+                       />
+
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/text5"
+                   android:layout_marginLeft="20dp"
+                   android:id="@+id/card10"
+                   android:layout_toRightOf="@id/card9"
+                   >
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:id="@+id/img14"
+                       android:src="@drawable/img9"
+
+                       />
+
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/text5"
+                   android:layout_marginLeft="20dp"
+                   android:id="@+id/card11"
+                   android:layout_toRightOf="@id/card10"
+                   >
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:id="@+id/img15"
+                       android:src="@drawable/img9"
+
+                       />
+
+               </androidx.cardview.widget.CardView>
+
+
+
+           </RelativeLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="40A1EXPRESS SPECIAL PRODUCT"
+               android:layout_below="@+id/layout1"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:id="@+id/text6"
+               />
+
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="100dp"
+                android:layout_below="@id/text6"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:src="@drawable/img21"
+               android:id="@+id/img21"
+                />
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="100dp"
+               android:layout_below="@id/text6"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:src="@drawable/img20"
+               android:id="@+id/img22"
+               android:layout_toRightOf="@id/img21"
+               />
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="100dp"
+               android:layout_below="@id/text6"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:src="@drawable/img22"
+               android:id="@+id/img23"
+               android:layout_toRightOf="@id/img22"
+               />
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="100dp"
+               android:layout_below="@id/text6"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:src="@drawable/img23"
+               android:id="@+id/img20"
+               android:layout_toRightOf="@id/img23"
+               />\
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="MORE TO LOVE"
+               android:textSize="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"
+               android:textStyle="bold"
+               android:id="@+id/text7"
+               android:layout_below="@+id/img21"
+               />
+
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"
+               android:src="@drawable/img13"
+               android:layout_below="@id/text7"
+               android:id="@+id/img25"
+               />
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="20dp"
+               android:src="@drawable/img16"
+               android:layout_below="@id/text7"
+               android:layout_toRightOf="@id/img25"
+               />
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"
+               android:src="@drawable/img14"
+               android:layout_below="@id/img25"
+               android:id="@+id/img26"
+               />
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="20dp"
+               android:src="@drawable/img15"
+               android:layout_below="@id/img25"
+               android:layout_toRightOf="@id/img26"
+               />
+
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

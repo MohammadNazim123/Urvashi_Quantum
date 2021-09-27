@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Urvashi Quantum</string>
+    <string name="facebook_app_id">612780910085303</string>
+    <string name="fb_login_protocol_scheme">fb612780910085303</string>
+</resources>

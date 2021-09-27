@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273728652834",
+    "project_id": "urvashi-quantum",
+    "storage_bucket": "urvashi-quantum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273728652834:android:324b080108fbb69f956c7b",
+        "android_client_info": {
+          "package_name": "com.example.urvashiquantum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273728652834-39uhs4d6dh4h1b11bniloa2eo45dd3c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6vWOx9vC0t6_y9i1inKWQK28iNXViwUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273728652834-39uhs4d6dh4h1b11bniloa2eo45dd3c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
